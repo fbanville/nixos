@@ -1,0 +1,4 @@
+# exclude everything first
+!/*
+# include my obsidiann vault
+/Vault

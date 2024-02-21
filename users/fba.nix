@@ -74,6 +74,7 @@
     };
     settings."org/gnome/desktop/session" = {
       idle-delay = 900;
+    };
   };
   programs.direnv.enable = true;
   nixpkgs.config.allowUnfreePredicate = _: true;
@@ -95,6 +96,10 @@
       sync_frequency = "5m";
       # dialect = "uk";
       # key_path = config.sops.secrets.atuin_key.path;
+      flags = [
+        # "--disable-up-arrow"
+        "--disable-ctrl-r"
+      ];
     };
   };
   programs.starship.enable = true;
@@ -160,6 +165,7 @@
     };
   };
   home.file.".face".source = ./fba.jpg;
+  home.file.".config/onedrive/sync_list".source = ./onedrive_sync_list;
   #WORKS home.file."toto".text = "now this is titi";
   #FAILS home.file."toto".text = config.sops.secrets.fba_password.path;
 }

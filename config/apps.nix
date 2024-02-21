@@ -18,5 +18,6 @@
     # plex-media-player broken
     celeste
     spacedrive
+    onedrivegui
   ];
 }
