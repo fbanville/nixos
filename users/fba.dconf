@@ -1,0 +1,92 @@
+[com/ftpix/transparentbar]
+dark-full-screen=false
+
+[org/gnome/Console]
+audible-bell=false
+custom-font='Fira Code 18'
+use-system-font=false
+
+[org/gnome/control-center]
+last-panel='privacy'
+window-state=(980, 640, false)
+
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'YaST', 'Pardus']
+
+[org/gnome/desktop/app-folders/folders/Pardus]
+categories=['X-Pardus-Apps']
+name='X-Pardus-Apps.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/background]
+picture-uri='file:///home/fba/Pictures/BingWallpaper/20240221-YosemiteFirefall_EN-CA1150407623_UHD.jpg'
+picture-uri-dark='file:///home/fba/Pictures/BingWallpaper/20240221-YosemiteFirefall_EN-CA1150407623_UHD.jpg'
+
+[org/gnome/desktop/input-sources]
+sources=[('xkb', 'us+intl')]
+xkb-options=['terminate:ctrl_alt_bksp']
+
+[org/gnome/desktop/interface]
+color-scheme='prefer-dark'
+cursor-size=32
+show-battery-percentage=true
+text-scaling-factor=1.25
+
+[org/gnome/desktop/notifications]
+application-children=['gnome-power-panel']
+
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/peripherals/touchpad]
+natural-scroll=false
+speed=-0.21400778210116733
+tap-to-click=true
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/privacy]
+old-files-age=uint32 30
+recent-files-max-age=-1
+
+[org/gnome/desktop/session]
+idle-delay=uint32 900
+
+[org/gnome/evolution-data-server]
+migrated=true
+
+[org/gnome/nautilus/preferences]
+migrated-gtk-settings=true
+
+[org/gnome/settings-daemon/plugins/power]
+idle-dim=false
+sleep-inactive-ac-type='nothing'
+sleep-inactive-battery-type='nothing'
+
+[org/gnome/shell]
+disabled-extensions=['weatheroclock@CleoMenezesJr.github.io']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'BingWallpaper@ineffable-gmail.com', 'transparent-top-bar@ftpix.com']
+welcome-dialog-last-shown-version='45.4'
+
+[org/gnome/shell/extensions/bingwallpaper]
+bing-json="[{\"startdate\":\"20240214\",\"fullstartdate\":\"202402140500\",\"enddate\":\"20240215\",\"url\":\"/th?id=OHR.BowingCrane_EN-CA2979553656_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.BowingCrane_EN-CA2979553656\",\"copyright\":\"Red-crowned crane bowing to his mate in Hokkaido, Japan (© Steve Bloom Images/Alamy)\",\"copyrightlink\":\"https://www.bing.com/search?q=Valentines+Day+history&form=hpcapt&filters=HpDate%3a%2220240214_0500%22\",\"title\":\"Better together\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20240214_BowingCrane%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"c1eb342b6bde0767db776d9fb59d067f\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[],\"width\":0,\"height\":0},{\"startdate\":\"20240215\",\"fullstartdate\":\"202402150500\",\"enddate\":\"20240216\",\"url\":\"/th?id=OHR.HippopotamusDay_EN-CA3448449315_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.HippopotamusDay_EN-CA3448449315\",\"copyright\":\"Hippopotamus mother and calf, South Luangwa National Park, Zambia (© Nature Picture Library/Alamy)\",\"copyrightlink\":\"https://www.bing.com/search?q=World+Hippopotamus+Day&form=hpcapt&filters=HpDate%3a%2220240215_0500%22\",\"title\":\"Happy Hippo Day!\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20240215_HippopotamusDay%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"cf7bba677c6711265b609c59ac2775a4\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[],\"width\":0,\"height\":0},{\"startdate\":\"20240216\",\"fullstartdate\":\"202402160500\",\"enddate\":\"20240217\",\"url\":\"/th?id=OHR.BackyardBird_EN-CA9775079263_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.BackyardBird_EN-CA9775079263\",\"copyright\":\"Female pyrrhuloxia perched on cactus plant, Texas (© outtakes/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Great+Backyard+Bird+Count&form=hpcapt&filters=HpDate%3a%2220240216_0500%22\",\"title\":\"Make every bird count\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20240216_BackyardBird%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"ea9cee2f3b83263915b58bf44dfd6ceb\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[],\"width\":0,\"height\":0},{\"startdate\":\"20240217\",\"fullstartdate\":\"202402170500\",\"enddate\":\"20240218\",\"url\":\"/th?id=OHR.HalbinselJasmund_EN-CA5327600383_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.HalbinselJasmund_EN-CA5327600383\",\"copyright\":\"Sassnitz lighthouse on Rügen island, Germany (© Christian Back/eStock)\",\"copyrightlink\":\"https://www.bing.com/search?q=Sassnitz+Germany&form=hpcapt&filters=HpDate%3a%2220240217_0500%22\",\"title\":\"A frozen sentinel\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20240217_HalbinselJasmund%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"0bc737b49b6720949fff41bf6b91f298\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[],\"width\":0,\"height\":0},{\"startdate\":\"20240218\",\"fullstartdate\":\"202402180500\",\"enddate\":\"20240219\",\"url\":\"/th?id=OHR.DominicaWhales_EN-CA6901378196_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.DominicaWhales_EN-CA6901378196\",\"copyright\":\"Sperm whale pod surfacing, Dominica (© Franco Banfi/Minden Pictures)\",\"copyrightlink\":\"https://www.bing.com/search?q=Sperm+Whale&form=hpcapt&filters=HpDate%3a%2220240218_0500%22\",\"title\":\"Taking a breather\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20240218_DominicaWhales%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"e65ac9d4b66cbe34fa5b7ba57aac8363\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[],\"width\":0,\"height\":0},{\"startdate\":\"20240219\",\"fullstartdate\":\"202402190500\",\"enddate\":\"20240220\",\"url\":\"/th?id=OHR.TajoRiver_EN-CA7817370984_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.TajoRiver_EN-CA7817370984\",\"copyright\":\"Toledo, Spain (© Carlos Fernandez/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Toledo+Spain&form=hpcapt&filters=HpDate%3a%2220240219_0500%22\",\"title\":\"Toledo's timeless tale\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20240219_TajoRiver%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"6cda95ce45eeb995dda8b376f033f5d4\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[],\"width\":0,\"height\":0},{\"startdate\":\"20240220\",\"fullstartdate\":\"202402200500\",\"enddate\":\"20240221\",\"url\":\"/th?id=OHR.PeakDistrictNP_EN-CA0602730401_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.PeakDistrictNP_EN-CA0602730401\",\"copyright\":\"Kinder Scout at sunrise, Peak District National Park, England (© john finney photography/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Kinder+Scout&form=hpcapt&filters=HpDate%3a%2220240220_0500%22\",\"title\":\"A park for the people\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20240220_PeakDistrictNP%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"c37795235aa9ee020b8d9085e00aaccb\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[],\"width\":0,\"height\":0},{\"startdate\":\"20240221\",\"fullstartdate\":\"202402210500\",\"enddate\":\"20240222\",\"url\":\"/th?id=OHR.YosemiteFirefall_EN-CA1150407623_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.YosemiteFirefall_EN-CA1150407623\",\"copyright\":\"Firefall at Horsetail Fall, Yosemite National Park, California (© Gregory B Cuvelier/Shutterstock)\",\"copyrightlink\":\"https://www.bing.com/search?q=Horsetail+Firefall&form=hpcapt&filters=HpDate%3a%2220240221_0500%22\",\"title\":\"A natural oxymoron\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20240221_YosemiteFirefall%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"b5db37a90c17f204699444cf849e19dc\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[],\"width\":0,\"height\":0}]"
+download-folder='~/Pictures/BingWallpaper/'
+icon-name='bing-symbolic'
+override-lockscreen-blur=true
+random-interval-mode='hourly'
+revert-to-current-image=true
+selected-image='YosemiteFirefall_EN-CA1150407623'
+state='{"maxlongdate":202402210500,"title":"Firefall at Horsetail Fall, Yosemite National Park, California","explanation":"Bing Wallpaper of the Day for 2024-02-20","copyright":"© Gregory B Cuvelier/Shutterstock","longstartdate":"202402210500","imageinfolink":"https://www.bing.com/search?q=Horsetail+Firefall&form=hpcapt&filters=HpDate%3a%2220240221_0500%22","imageURL":"https://www.bing.com/th?id=OHR.YosemiteFirefall_EN-CA1150407623_UHD.jpg&qlt=100","filename":"/home/fba/Pictures/BingWallpaper/20240221-YosemiteFirefall_EN-CA1150407623_UHD.jpg","favourite":false,"width":null,"height":null,"shuffledue":0}'
+
+[org/gnome/shell/world-clocks]
+locations=@av []
