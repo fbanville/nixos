@@ -8,6 +8,18 @@
     enable = true;
     shellAliases = {
       config = "git --git-dir=/home/fba/.cfg/ --work-tree=/home/fba";
+      # vi = "nvim";
+      # vi = "hx";
+      ls = "eza";
+      lsd = "eza --long --header --git --only-dirs";
+      lss = "eza --long --header --git --sort size";
+      lsn = "eza --long --header --git --sort name";
+      lsm = "eza --long --header --git --sort mod";
+      lse = "eza --long --header --git --sort ext";
+      # z  = "zoxide";
+      cat = "bat";
+      top = "btm";
+      ps = "procs";
     };
   };
   home.sessionVariables = {
@@ -34,6 +46,90 @@
         identityFile = "/home/fba/.ssh/id_ed25519";
       };
     }; 
+  };
+  programs.direnv.enable = true;
+  nixpkgs.config.allowUnfreePredicate = _: true;
+  programs.vscode = {
+    enable = true;
+    extensions = with pkgs.vscode-extensions; [
+      dracula-theme.theme-dracula
+      #vscodevim.vim
+      yzhang.markdown-all-in-one
+      mgt19937.typst-preview
+      kamadorueda.alejandra
+      rust-lang.rust-analyzer
+    ];
+  };
+  programs.atuin = {
+    enable = true;
+    settings = {
+      sync_address = "https://history.banber.org";
+      sync_frequency = "5m";
+      # dialect = "uk";
+      # key_path = config.sops.secrets.atuin_key.path;
+    };
+  };
+  programs.starship.enable = true;
+  programs.starship.settings = {
+    add_newline = false;
+    format = "$shlvl$shell$username$hostname$nix_shell$git_branch$git_commit$git_state$git_status$directory$jobs$cmd_duration$character";
+    shlvl = {
+      disabled = false;
+      symbol = "ﰬ";
+      style = "bright-red bold";
+    };
+    shell = {
+      disabled = false;
+      format = "$indicator";
+      fish_indicator = "";
+      bash_indicator = "[BASH](bright-white) ";
+      zsh_indicator = "[ZSH](bright-white) ";
+    };
+    username = {
+      style_user = "bright-white bold";
+      style_root = "bright-red bold";
+    };
+    hostname = {
+      style = "bright-green bold";
+      ssh_only = true;
+    };
+    nix_shell = {
+      symbol = "";
+      format = "[$symbol$name]($style) ";
+      style = "bright-purple bold";
+    };
+    git_branch = {
+      only_attached = true;
+      format = "[$symbol$branch]($style) ";
+      symbol = "שׂ";
+      style = "bright-yellow bold";
+    };
+    git_commit = {
+      only_detached = true;
+      format = "[ﰖ$hash]($style) ";
+      style = "bright-yellow bold";
+    };
+    git_state = {
+      style = "bright-purple bold";
+    };
+    git_status = {
+      style = "bright-green bold";
+    };
+    directory = {
+      read_only = " ";
+      truncation_length = 0;
+    };
+    cmd_duration = {
+      format = "[$duration]($style) ";
+      style = "bright-blue";
+    };
+    jobs = {
+      style = "bright-green bold";
+    };
+    character = {
+      success_symbol = "[\\$](bright-green bold)";
+      error_symbol = "[\\$](bright-red bold)";
+    };
   };
   #WORKS home.file."toto".source = ./toto;
   #WORKS home.file."toto".text = "now this is titi";

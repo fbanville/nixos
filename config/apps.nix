@@ -6,6 +6,7 @@
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     # Applications
+    firefox
     bitwarden-cli
     chromium
     obsidian
