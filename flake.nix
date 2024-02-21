@@ -32,6 +32,7 @@
           ./config/print.nix
           ./config/sound.nix
           ./config/rust-cli.nix
+          ./config/apps.nix
         ];
       };
     };
