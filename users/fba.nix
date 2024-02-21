@@ -47,6 +47,10 @@
       };
     }; 
   };
+  dconf = {
+    enable = true;
+    settings."org/gnome/desktop/interface".color-scheme = "prefer-dark";
+  };
   programs.direnv.enable = true;
   nixpkgs.config.allowUnfreePredicate = _: true;
   programs.vscode = {
@@ -131,7 +135,7 @@
       error_symbol = "[\\$](bright-red bold)";
     };
   };
-  #WORKS home.file."toto".source = ./toto;
+  home.file.".face".source = ./users/fba.jpg;
   #WORKS home.file."toto".text = "now this is titi";
   #FAILS home.file."toto".text = config.sops.secrets.fba_password.path;
 }
