@@ -27,7 +27,11 @@
           home-manager.nixosModules.home-manager {
             home-manager.users.fba = import ./users/fba.nix;
           }
-          ./base/gnome.nix
+          ./config/gnome.nix
+          ./config/fonts.nix
+          ./config/print.nix
+          ./config/sound.nix
+          ./config/rust-cli.nix
         ];
       };
     };
