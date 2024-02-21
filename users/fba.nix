@@ -135,7 +135,7 @@
       error_symbol = "[\\$](bright-red bold)";
     };
   };
-  home.file.".face".source = ./users/fba.jpg;
+  home.file.".face".source = ./fba.jpg;
   #WORKS home.file."toto".text = "now this is titi";
   #FAILS home.file."toto".text = config.sops.secrets.fba_password.path;
 }

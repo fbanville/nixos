@@ -33,6 +33,7 @@
           ./config/sound.nix
           ./config/rust-cli.nix
           ./config/apps.nix
+          ./config/misc.nix
           #./config/virt.nix
         ];
       };
