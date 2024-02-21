@@ -49,7 +49,31 @@
   };
   dconf = {
     enable = true;
-    settings."org/gnome/desktop/interface".color-scheme = "prefer-dark";
+    settings."org/gnome/desktop/interface" = {
+       color-scheme = "prefer-dark";
+       cursor-size = 32;
+       text-scaling-factor = 1.25;
+       show-battery-percentage = true;
+    };
+    settings."org/gnome/Console" = {
+      #last-window-size = "(652, 480)";
+      audible-bell = false;
+      custom-font = "Fira Code 18";
+      use-system-font = false; 
+    };
+    settings."org/gnome/desktop/peripherals/touchpad" = {
+      natural-scroll = false;
+      #speed = -0.21400778210116733;
+      tap-to-click = true;
+      two-finger-scrolling-enabled = true;
+    };
+    settings."org/gnome/settings-daemon/plugins/power" = {
+      idle-dim = false;
+      sleep-inactive-ac-type = "nothing";
+      sleep-inactive-battery-type = "nothing";
+    };
+    settings."org/gnome/desktop/session" = {
+      idle-delay = 900;
   };
   programs.direnv.enable = true;
   nixpkgs.config.allowUnfreePredicate = _: true;
