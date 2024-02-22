@@ -20,6 +20,7 @@
     fastfetch
     age
     sops
+    btop
   ];
 
   nixpkgs.config.allowUnfree = true;

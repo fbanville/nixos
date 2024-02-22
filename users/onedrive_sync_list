@@ -1,3 +1,6 @@
+# Syntax available in 
+# https://github.com/abraunegg/onedrive/blob/master/docs/USAGE.md#performing-a-single-directory-sync
+#
 # exclude everything first
 !/*
 # include my obsidiann vault

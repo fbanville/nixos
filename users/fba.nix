@@ -18,7 +18,7 @@
       lse = "eza --long --header --git --sort ext";
       # z  = "zoxide";
       cat = "bat";
-      top = "btm";
+      top = "btop";
       ps = "procs";
     };
   };
@@ -58,7 +58,7 @@
     settings."org/gnome/Console" = {
       #last-window-size = "(652, 480)";
       audible-bell = false;
-      custom-font = "Fira Code 18";
+      custom-font = "Fira Code 16";
       use-system-font = false; 
     };
     settings."org/gnome/desktop/peripherals/touchpad" = {
@@ -68,12 +68,16 @@
       two-finger-scrolling-enabled = true;
     };
     settings."org/gnome/settings-daemon/plugins/power" = {
+      ambient-enabled = false;
       idle-dim = false;
       sleep-inactive-ac-type = "nothing";
       sleep-inactive-battery-type = "nothing";
+      power-button-action = "interactive";
+      power-saver-profile-on-low-battery = false;
+
     };
     settings."org/gnome/desktop/session" = {
-      idle-delay = 900;
+      idle-delay = "uint32 900";
     };
   };
   programs.direnv.enable = true;
