@@ -37,6 +37,28 @@
           #./config/virt.nix
         ];
       };
+      zen = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          disko.nixosModules.disko
+          nixos-hardware.nixosModules.framework-11th-gen-intel
+          #sops-nix.nixosModules.sops
+          ./hosts/satori/configuration.nix
+          ./config/base.nix
+          ./users/users.nix
+          home-manager.nixosModules.home-manager {
+            home-manager.users.fba = import ./users/fba.nix;
+          }
+          ./config/gnome.nix
+          ./config/fonts.nix
+          ./config/print.nix
+          ./config/sound.nix
+          ./config/rust-cli.nix
+          ./config/apps.nix
+          ./config/misc.nix
+          #./config/virt.nix
+        ];
+      };
     };
   };
 }
