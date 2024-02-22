@@ -19,6 +19,6 @@
     celeste
     spacedrive
     onedrivegui
-    warp-terminal
+    # warp-terminal
   ];
 }
