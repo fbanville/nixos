@@ -18,7 +18,8 @@
     # plex-media-player broken
     celeste
     spacedrive
-    onedrivegui
+    handbrake
+    asunder 
     # warp-terminal
   ];
 }

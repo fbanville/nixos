@@ -21,6 +21,7 @@
     age
     sops
     btop
+    unzip
   ];
 
   nixpkgs.config.allowUnfree = true;
