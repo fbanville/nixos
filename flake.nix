@@ -43,7 +43,7 @@
           disko.nixosModules.disko
           nixos-hardware.nixosModules.framework-11th-gen-intel
           #sops-nix.nixosModules.sops
-          ./hosts/satori/configuration.nix
+          ./hosts/zen/configuration.nix
           ./config/base.nix
           ./users/users.nix
           home-manager.nixosModules.home-manager {
