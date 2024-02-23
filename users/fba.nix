@@ -77,7 +77,10 @@
 
     };
     settings."org/gnome/desktop/session" = {
-      idle-delay = "uint32 900";
+      idle-delay = 900;
+    };
+    settings."org/gnome/desktop/screensaver" = {
+      lock-enabled = false;
     };
   };
   programs.direnv.enable = true;
