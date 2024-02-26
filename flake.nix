@@ -52,6 +52,28 @@
           ./config/gnome.nix
           ./config/fonts.nix
           ./config/print.nix
+          ./config/sound.nixframework-11th-gen-intel
+          ./config/rust-cli.nix
+          ./config/apps.nix
+          ./config/misc.nix
+          #./config/virt.nix
+        ];
+      };
+      yoga = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          disko.nixosModules.disko
+          nixos-hardware.nixosModules."lenovo/yoga/6/13ALC6"
+          #sops-nix.nixosModules.sops
+          ./hosts/yoga/configuration.nix
+          ./config/base.nix
+          ./users/users.nix
+          home-manager.nixosModules.home-manager {
+            home-manager.users.fba = import ./users/fba.nix;
+          }
+          ./config/gnome.nix
+          ./config/fonts.nix
+          ./config/print.nix
           ./config/sound.nix
           ./config/rust-cli.nix
           ./config/apps.nix
