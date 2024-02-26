@@ -20,6 +20,8 @@
     spacedrive
     handbrake
     asunder 
+    vlc
+    jami
     # warp-terminal
   ];
 }
