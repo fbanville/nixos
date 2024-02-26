@@ -63,7 +63,7 @@
         system = "x86_64-linux";
         modules = [
           disko.nixosModules.disko
-          nixos-hardware.nixosModules."lenovo/yoga/6/13ALC6"
+          nixos-hardware.nixosModules.lenovo-yoga-6-13ALC6
           #sops-nix.nixosModules.sops
           ./hosts/yoga/configuration.nix
           ./config/base.nix
