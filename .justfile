@@ -1,6 +1,12 @@
 
 HOSTNAME := `hostname`
 
+# push latest changes to git repo
+push:
+  git add . --all
+  git commit
+  git push
+
 # backup current configuration to usb key
 backup:
   rsync -arv --delete . /root/tmp
