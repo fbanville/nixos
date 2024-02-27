@@ -45,17 +45,17 @@
   services.openssh = {
     enable = true;
     settings = {
-      PasswordAuthentication = true;
-      PermitRootLogin = "yes";
+      PasswordAuthentication = false;
+      PermitRootLogin = "no";
     };
   };
 
 
-#  sops.defaultSopsFile = ./../secrets/secrets.yaml;
-#  sops.age.keyFile = "/root/.config/sops/age/keys.txt";
+  sops.defaultSopsFile = ./../secrets/secrets.yaml;
+  sops.age.keyFile = "/home/fba/.config/sops/age/keys.txt";
 #  sops.age.generateKey = false;
 #  #sops.secrets.fba_password.neededForUsers = true;
-#  sops.secrets = {
-#    "fba_password" = {};
-#  };
+  sops.secrets = {
+    "fba_password" = {};
+  };
 }

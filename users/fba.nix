@@ -4,6 +4,9 @@
   home.stateVersion = "23.05";
   home.username = "fba";
   home.homeDirectory = "/home/fba";
+  sops.secrets.atuin_key = {
+    sopsFile = ./fba-secrets.yaml;
+  };
   programs.bash = {
     enable = true;
     shellAliases = {
@@ -112,7 +115,8 @@
   programs.starship.enable = true;
   programs.starship.settings = {
     add_newline = false;
-    format = "$shlvl$shell$username$hostname$nix_shell$git_branch$git_commit$git_state$git_status$directory$jobs$cmd_duration$character";
+    #format = "$shlvl$shell$username$hostname$nix_shell$git_branch$git_commit$git_state$git_status$directory$jobs$cmd_duration$character";
+    format = "$username$hostname$character";
     shlvl = {
       disabled = false;
       symbol = "ﰬ";
@@ -131,7 +135,7 @@
     };
     hostname = {
       style = "bright-green bold";
-      ssh_only = true;
+      ssh_only = false;
     };
     nix_shell = {
       symbol = "";
@@ -167,8 +171,8 @@
       style = "bright-green bold";
     };
     character = {
-      success_symbol = "[\\$](bright-green bold)";
-      error_symbol = "[\\$](bright-red bold)";
+      success_symbol = "[>](bright-green bold)";
+      error_symbol = "[>](bright-red bold)";
     };
   };
   home.file.".face".source = ./fba.jpg;

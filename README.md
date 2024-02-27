@@ -1,5 +1,10 @@
 # work in progress
 
+### TODO
+- setup secrets for home-manager:
+  - https://github.com/Mic92/sops-nix
+  - https://haseebmajid.dev/posts/2024-01-28-how-to-get-sops-nix-working-with-home-manager-modules/
+
 ## Manual Steps
 
 ### All systems
@@ -22,3 +27,4 @@ journalctl --user -t onedrive | less
 
 ### Satori
 - enable and enroll fingerprint reader for login.
+
