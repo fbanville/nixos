@@ -2,7 +2,7 @@
 {
 
   # Latest linux kernel
-  # boot.kernelPackages = pkgs.linuxPackages_latest; # always use the latest kernel (bleeding edge stuff!)
+  boot.kernelPackages = pkgs.linuxPackages_latest; # always use the latest kernel (bleeding edge stuff!)
 
   time.timeZone = "America/Toronto";
   i18n.defaultLocale = "en_CA.UTF-8";
@@ -50,12 +50,11 @@
     };
   };
 
-
-  sops.defaultSopsFile = ./../secrets/secrets.yaml;
-  sops.age.keyFile = "/home/fba/.config/sops/age/keys.txt";
+#  sops.defaultSopsFile = ./../secrets/secrets.yaml;
+#  sops.age.keyFile = "/home/fba/.config/sops/age/keys.txt";
 #  sops.age.generateKey = false;
 #  #sops.secrets.fba_password.neededForUsers = true;
-  sops.secrets = {
-    "fba_password" = {};
-  };
+#  sops.secrets = {
+#    "fba_password" = {};
+#  };
 }

@@ -4,9 +4,9 @@
   home.stateVersion = "23.05";
   home.username = "fba";
   home.homeDirectory = "/home/fba";
-  sops.secrets.atuin_key = {
-    sopsFile = ./fba-secrets.yaml;
-  };
+#  sops.secrets.atuin_key = {
+#    sopsFile = ./fba-secrets.yaml;
+#  };
   programs.bash = {
     enable = true;
     shellAliases = {
@@ -52,38 +52,50 @@
   };
   dconf = {
     enable = true;
-    settings."org/gnome/desktop/interface" = {
-       color-scheme = "prefer-dark";
-       cursor-size = 32;
-       text-scaling-factor = 1.25;
-       show-battery-percentage = true;
-    };
-    settings."org/gnome/Console" = {
-      #last-window-size = "(652, 480)";
-      audible-bell = false;
-      custom-font = "Fira Code 16";
-      use-system-font = false; 
-    };
-    settings."org/gnome/desktop/peripherals/touchpad" = {
-      natural-scroll = false;
-      #speed = -0.21400778210116733;
-      tap-to-click = true;
-      two-finger-scrolling-enabled = true;
-    };
-    settings."org/gnome/settings-daemon/plugins/power" = {
-      ambient-enabled = false;
-      idle-dim = false;
-      sleep-inactive-ac-type = "nothing";
-      sleep-inactive-battery-type = "nothing";
-      power-button-action = "interactive";
-      power-saver-profile-on-low-battery = false;
-
-    };
-    settings."org/gnome/desktop/session" = {
-      idle-delay = 900;
-    };
-    settings."org/gnome/desktop/screensaver" = {
-      lock-enabled = false;
+    settings = {
+      "org/gnome/desktop/interface" = {
+        color-scheme = "prefer-dark";
+        cursor-size = 32;
+        text-scaling-factor = 1.25;
+        show-battery-percentage = true;
+      };
+      "org/gnome/Console" = {
+        audible-bell = false;
+        custom-font = "Fira Code 16";
+        use-system-font = false; 
+      };
+      "org/gnome/desktop/peripherals/touchpad" = {
+        natural-scroll = false;
+        #speed = -0.21400778210116733;
+        tap-to-click = true;
+        two-finger-scrolling-enabled = true;
+      };
+      "org/gnome/settings-daemon/plugins/power" = {
+        ambient-enabled = false;
+        idle-dim = false;
+        sleep-inactive-ac-type = "nothing";
+        sleep-inactive-battery-type = "nothing";
+        power-button-action = "interactive";
+        power-saver-profile-on-low-battery = false;
+      };
+      "org/gnome/desktop/session" = {
+        idle-delay = 900;
+      };
+      "org/gnome/desktop/screensaver" = {
+        lock-enabled = false;
+      };
+      "org/gnome/shell" = {
+        # enabled-extensions = ['appindicatorsupport@rgcjonas.gmail.com', 'BingWallpaper@ineffable-gmail.com', 'transparent-top-bar@ftpix.com']
+        favorite-apps = [
+          "org.gnome.Console.desktop"
+          "org.gnome.Nautilus.desktop"
+          "firefox.desktop"
+          "obsidian.desktop"
+          "jami.desktop"
+          "com.spacedrive.desktop"
+          "plexamp.desktop"
+        ];
+      };
     };
   };
   programs.direnv.enable = true;
