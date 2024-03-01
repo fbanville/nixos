@@ -84,6 +84,12 @@
       "org/gnome/desktop/screensaver" = {
         lock-enabled = false;
       };
+      "org/gnome/desktop/remote-desktop/rdp" = {
+        enable = true;
+        tls-cert = "/home/fba/.local/share/gnome-remote-desktop/rdp-tls.crt";
+        tls-key = "/home/fba/.local/share/gnome-remote-desktop/rdp-tls.key";
+        view-only = false;
+      };
       "org/gnome/shell" = {
         # enabled-extensions = ['appindicatorsupport@rgcjonas.gmail.com', 'BingWallpaper@ineffable-gmail.com', 'transparent-top-bar@ftpix.com']
         favorite-apps = [
