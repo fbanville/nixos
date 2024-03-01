@@ -34,7 +34,7 @@
   networking.nftables.enable = true; # uses nfttables rather than iptables.
   networking.firewall = {
     enable = true; # Enables firewall, all ports should be closed.
-    allowedTCPPorts = [ 22 ];
+    allowedTCPPorts = [ 22 3389 ];
     # allowedTCPPorts = [ 80 443 ];
     # allowedUDPPortRanges = [
     #   { from = 4000; to = 4007; }

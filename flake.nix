@@ -42,7 +42,7 @@
         system = "x86_64-linux";
         modules = [
           disko.nixosModules.disko
-          nixos-hardware.nixosModules.framework-11th-gen-intel
+          #nixos-hardware.nixosModules.framework-11th-gen-intel
           #sops-nix.nixosModules.sops
           ./hosts/zen/configuration.nix
           ./config/base.nix
