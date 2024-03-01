@@ -12,7 +12,7 @@
 #    sops-nix.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-#  outputs = { self, nixpkgs, nixos-hardware, disko, home-manager, sops-nix, }: {
+  #outputs = { self, nixpkgs, nixos-hardware, disko, home-manager, sops-nix, }: {
   outputs = { self, nixpkgs, nixos-hardware, disko, home-manager, }: {
     nixosConfigurations = {
       satori = nixpkgs.lib.nixosSystem {
@@ -20,7 +20,7 @@
         modules = [
           disko.nixosModules.disko
           nixos-hardware.nixosModules.framework-11th-gen-intel
-#          sops-nix.nixosModules.sops
+          #sops-nix.nixosModules.sops
           ./hosts/satori/configuration.nix
           ./config/base.nix
           ./users/users.nix
