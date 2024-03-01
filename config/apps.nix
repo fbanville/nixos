@@ -22,6 +22,6 @@
     asunder 
     vlc
     jami
-    # warp-terminal
+    warp-terminal
   ];
 }

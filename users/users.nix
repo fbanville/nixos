@@ -1,9 +1,9 @@
 { config, pkgs, home-manager, ... }:
 {
-  sops.secrets.fba_password.neededForUsers = true;
+#  sops.secrets.fba_password.neededForUsers = true;
   users.users.fba = {
     isNormalUser = true;
-    hashedPasswordFile = config.sops.secrets.fba_password.path;
+#    hashedPasswordFile = config.sops.secrets.fba_password.path;
     description = "François Banville";
     extraGroups = [
       "networkmanager"

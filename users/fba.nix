@@ -4,9 +4,9 @@
   home.stateVersion = "23.05";
   home.username = "fba";
   home.homeDirectory = "/home/fba";
-  sops.secrets.atuin_key = {
-    sopsFile = ./fba-secrets.yaml;
-  };
+#  sops.secrets.atuin_key = {
+#    sopsFile = ./fba-secrets.yaml;
+#  };
   programs.bash = {
     enable = true;
     shellAliases = {
@@ -38,15 +38,15 @@
     matchBlocks = {
       "github.com" = {
         hostname = "github.com";
-        identityFile = "/home/fba/.ssh/id_ed25519_github";
+        identityFile = "~/.ssh/id_ed25519_github";
       };
       "ovh" = {
         hostname = "142.4.210.88";
-        identityFile = "/home/fba/.ssh/id_ed25519";
+        identityFile = "~/.ssh/id_ed25519";
       };
       "home" = {
         hostname = "192.168.2.16";
-        identityFile = "/home/fba/.ssh/id_ed25519";
+        identityFile = "~/.ssh/id_ed25519";
       };
     }; 
   };
