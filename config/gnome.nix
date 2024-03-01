@@ -32,6 +32,6 @@
     #gnomeExtensions.gesture-improvements
     #mojave-gtk-theme
     dconf2nix
-    dconf-editor
+    gnome.dconf-editor
   ];
 }
