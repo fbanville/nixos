@@ -81,6 +81,7 @@
       "org/gnome/desktop/session" = {
         idle-delay = 900;
       };
+      "org/gnome/desktop/sound".event-sounds = false;
       "org/gnome/desktop/screensaver" = {
         lock-enabled = false;
       };
