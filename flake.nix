@@ -35,7 +35,7 @@
           ./config/rust-cli.nix
           ./config/apps.nix
           ./config/misc.nix
-          #./config/virt.nix
+          ./config/virt.nix
         ];
       };
       zen = nixpkgs.lib.nixosSystem {

@@ -1,20 +1,20 @@
 { config, pkgs, home-manager, ... }:
 {
   virtualisation =  {
-    docker = {
-      enable = true;
-      autoPrune.enable = true;
-      storageDriver = "overlay2";
-      #extraOptions = "--iptables=false";
-    };
+#    docker = {
+#      enable = true;
+#      autoPrune.enable = true;
+#      storageDriver = "overlay2";
+#      #extraOptions = "--iptables=false";
+#    };
     libvirtd.enable = true;
-    waydroid.enable = true;
-    lxd.enable = true;
-    podman = {
-      enable = true;
-      dockerCompat = false; # `docker` alias for podman
-      defaultNetwork.settings.dns_enabled = true; # podman-compose able to talk to each other.
-    };
+#    waydroid.enable = true;
+#    lxd.enable = true;
+#    podman = {
+#      enable = true;
+#      dockerCompat = false; # `docker` alias for podman
+#      defaultNetwork.settings.dns_enabled = true; # podman-compose able to talk to each other.
+#    };
   };
   
 #  virtualisation.oci-containers = {
