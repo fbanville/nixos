@@ -40,6 +40,10 @@
         hostname = "github.com";
         identityFile = "~/.ssh/id_ed25519_github";
       };
+      "gitlab.com" = {
+        hostname = "gitlab.com";
+        identityFile = "~/.ssh/id_ed25519_gitlab";
+      };
       "ovh" = {
         hostname = "142.4.210.88";
         identityFile = "~/.ssh/id_ed25519";
