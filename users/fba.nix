@@ -79,7 +79,7 @@
         power-saver-profile-on-low-battery = false;
       };
       "org/gnome/desktop/session" = {
-        idle-delay = 900;
+        idle-delay = 1800;
       };
       "org/gnome/desktop/sound".event-sounds = false;
       "org/gnome/desktop/screensaver" = {
