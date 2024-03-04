@@ -8,6 +8,7 @@
 #      #extraOptions = "--iptables=false";
 #    };
     libvirtd.enable = true;
+    libvirtd.enableKVM = true; # trying to fix dhcp bug in vm guests.
 #    waydroid.enable = true;
 #    lxd.enable = true;
 #    podman = {
