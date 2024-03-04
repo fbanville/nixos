@@ -35,11 +35,7 @@
   networking.firewall = {
     enable = true; # Enables firewall, all ports should be closed.
     allowedTCPPorts = [ 22 3389 ];
-    # allowedTCPPorts = [ 80 443 ];
-    # allowedUDPPortRanges = [
-    #   { from = 4000; to = 4007; }
-    #   { from = 8000; to = 8010; }
-    # ];
+    allowedUDPPorts = [ 67 ]; # DHCP server TODO move to virtualization section
   };
 
   services.openssh = {

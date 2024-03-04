@@ -7,8 +7,13 @@
 #      storageDriver = "overlay2";
 #      #extraOptions = "--iptables=false";
 #    };
-    libvirtd.enable = true;
-    libvirtd.enableKVM = true; # trying to fix dhcp bug in vm guests.
+    libvirtd = {
+      enable = true;
+      # not certain this is necessary
+      #qemu.ovmf.enable = true;
+      #qemu.runAsRoot = true;
+    };
+    
 #    waydroid.enable = true;
 #    lxd.enable = true;
 #    podman = {
