@@ -1,5 +1,9 @@
-{ config, pkgs, home-manager, ... }:
 {
+  config,
+  pkgs,
+  home-manager,
+  ...
+}: {
   fonts.fontconfig.enable = true;
   fonts.enableDefaultPackages = true;
   fonts.packages = with pkgs; [

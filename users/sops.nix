@@ -11,4 +11,3 @@
     defaultSecretsMountPoint = "/run/user/1000/secrets.d";
   };
 }
-

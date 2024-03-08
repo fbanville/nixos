@@ -1,5 +1,9 @@
-{ config, pkgs, home-manager, ... }:
 {
+  config,
+  pkgs,
+  home-manager,
+  ...
+}: {
   sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -10,4 +14,3 @@
     pulse.enable = true;
   };
 }
-

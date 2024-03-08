@@ -1,5 +1,9 @@
-{ config, pkgs, home-manager, ... }:
 {
+  config,
+  pkgs,
+  home-manager,
+  ...
+}: {
   services.xserver.xkb = {
     layout = "us";
     variant = "intl";
@@ -8,7 +12,7 @@
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
   programs.dconf.enable = true;
-  services.udev.packages = with pkgs; [ gnome.gnome-settings-daemon ];
+  services.udev.packages = with pkgs; [gnome.gnome-settings-daemon];
   services.hardware.bolt.enable = true;
 
   environment.systemPackages = with pkgs; [

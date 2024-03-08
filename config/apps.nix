@@ -1,5 +1,9 @@
-{ config, pkgs, home-manager, ... }:
 {
+  config,
+  pkgs,
+  home-manager,
+  ...
+}: {
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0" # for foliate
   ];
@@ -19,7 +23,7 @@
     celeste
     spacedrive
     handbrake
-    asunder 
+    asunder
     vlc
     jami
     warp-terminal

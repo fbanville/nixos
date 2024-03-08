@@ -1,12 +1,16 @@
 #{ config, pkgs, home-manager, sops-nix, ... }:
-{ config, pkgs, home-manager, ... }:
 {
+  config,
+  pkgs,
+  home-manager,
+  ...
+}: {
   home.stateVersion = "23.05";
   home.username = "fba";
   home.homeDirectory = "/home/fba";
-#  sops.secrets.atuin_key = {
-#    sopsFile = ./fba-secrets.yaml;
-#  };
+  #  sops.secrets.atuin_key = {
+  #    sopsFile = ./fba-secrets.yaml;
+  #  };
   programs.bash = {
     enable = true;
     shellAliases = {
@@ -52,7 +56,7 @@
         hostname = "192.168.2.16";
         identityFile = "~/.ssh/id_ed25519";
       };
-    }; 
+    };
   };
   dconf = {
     enable = true;
@@ -66,7 +70,7 @@
       "org/gnome/Console" = {
         audible-bell = false;
         custom-font = "Fira Code 16";
-        use-system-font = false; 
+        use-system-font = false;
       };
       "org/gnome/desktop/peripherals/touchpad" = {
         natural-scroll = false;

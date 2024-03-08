@@ -1,5 +1,9 @@
-{ config, pkgs, home-manager, ... }:
 {
+  config,
+  pkgs,
+  home-manager,
+  ...
+}: {
   #sops.secrets.fba_password.neededForUsers = true;
   users.users.fba = {
     isNormalUser = true;
@@ -23,18 +27,16 @@
       # mac
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGRneZjuzVFrlbbnpiRVBcsQ2DH+hTVq6aE5tvyww0cU waf@banber.org"
     ];
-
-
   };
   security.sudo = {
     enable = true;
     extraRules = [
       {
-        users = [ "fba" ];
+        users = ["fba"];
         commands = [
-          { 
-            command = "ALL" ;
-            options= [ "NOPASSWD" "SETENV" ]; 
+          {
+            command = "ALL";
+            options = ["NOPASSWD" "SETENV"];
           }
         ];
       }
