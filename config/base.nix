@@ -40,8 +40,9 @@
   networking.firewall = {
     #enable = false; # Enables firewall, all ports should be closed.
     enable = true; # Enables firewall, all ports should be closed.
-    allowedTCPPorts = [22 3389];
-    allowedUDPPorts = [67]; # DHCP server TODO move to virtualization section
+    #TCP 4000 and UDP 1905 for noson (sonos)
+    allowedTCPPorts = [22 3389 4000];
+    allowedUDPPorts = [67 1905]; # DHCP server TODO move to virtualization section
     trustedInterfaces = ["virbr0"];
   };
 

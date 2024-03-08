@@ -27,5 +27,6 @@
     vlc
     jami
     warp-terminal
+    noson
   ];
 }
