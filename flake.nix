@@ -3,7 +3,7 @@
   # getting there 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixos-hardware.url = "github:NixOS/nixos-hardware";
+   nixos-hardware.url = "github:NixOS/nixos-hardware";
     disko.url = "github:nix-community/disko";
     disko.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = "github:nix-community/home-manager";
@@ -13,12 +13,7 @@
   };
 
   #outputs = { self, nixpkgs, nixos-hardware, disko, home-manager, sops-nix, }: {
-  outputs = {
-    self,
-    nixpkgs,
-    nixos-hardware,
-    disko,
-    home-manager,
+  outputs = { self, nixpkgs, nixos-hardware, disko, home-manager,
   }: {
     nixosConfigurations = {
       satori = nixpkgs.lib.nixosSystem {
