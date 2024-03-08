@@ -17,15 +17,16 @@
   environment.systemPackages = with pkgs; [
     just
     neovim
-    zellij
+    zellij # a screen replacement.
     git
     vim
     fastfetch
     age
-    sops
+    sops # secret manager for nixos config.
     btop
     unzip
-    alejandra
+    alejandra # to format nix files.
+    pre-commit # to manage git hooks.
   ];
 
   nixpkgs.config.allowUnfree = true;
