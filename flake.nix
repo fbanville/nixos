@@ -1,6 +1,6 @@
 {
   description = "Waf nix configuration";
-
+  # getting there 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixos-hardware.url = "github:NixOS/nixos-hardware";
