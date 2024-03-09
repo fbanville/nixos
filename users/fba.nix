@@ -66,6 +66,7 @@
         cursor-size = 32;
         text-scaling-factor = 1.25;
         show-battery-percentage = true;
+        enable-hot-corners = false;
       };
       "org/gnome/Console" = {
         audible-bell = false;
@@ -98,6 +99,10 @@
         tls-cert = "/home/fba/.local/share/gnome-remote-desktop/rdp-tls.crt";
         tls-key = "/home/fba/.local/share/gnome-remote-desktop/rdp-tls.key";
         view-only = false;
+      };
+      "org/gnome/mutter" = {
+        dynamic-workspaces = true;
+        edge-tiling = false;
       };
       "org/gnome/shell" = {
         # enabled-extensions = ['appindicatorsupport@rgcjonas.gmail.com', 'BingWallpaper@ineffable-gmail.com', 'transparent-top-bar@ftpix.com']
