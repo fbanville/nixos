@@ -1,5 +1,8 @@
-
 HOSTNAME := `hostname`
+
+# Default recipe to display help information
+default:
+  @just --list
 
 # push latest changes to git repo
 push:
