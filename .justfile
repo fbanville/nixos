@@ -23,6 +23,9 @@ upgrade:
   sudo nix flake update
   sudo nixos-rebuild switch --flake .#{{HOSTNAME}} --upgrade
 
+# Install pre-commit hook for format checking.
+hooks:
+  pre-commit install
 
 # Clean up system
 clean:
