@@ -43,6 +43,7 @@
           ./config/apps.nix
           ./config/misc.nix
           ./config/virt.nix
+          ./config/appimage.nix
         ];
       };
       zen = nixpkgs.lib.nixosSystem {

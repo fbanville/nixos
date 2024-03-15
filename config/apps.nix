@@ -26,7 +26,7 @@
     asunder
     vlc
     jami
-    warp-terminal
+    # warp-terminal # not the latest version
     noson
   ];
 }
