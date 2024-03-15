@@ -90,7 +90,10 @@
       "org/gnome/desktop/session" = {
         idle-delay = 1800;
       };
-      "org/gnome/desktop/sound".event-sounds = false;
+      "org/gnome/desktop/sound" = {
+        event-sounds = false;
+        allow-volume-above-100-percent = true;
+      };
       "org/gnome/desktop/screensaver" = {
         lock-enabled = false;
       };
