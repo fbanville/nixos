@@ -33,3 +33,13 @@ clean:
   sudo nix profile wipe-history --profile /nix/var/nix/profiles/system  --older-than 7d
   # garbage collect all unused nix store entries
   sudo nix store gc --debug
+
+# Refresh firmware and get upgrades
+fw-update:
+  fwupdmgr --force refresh
+  fwupdmgr get-updates 
+
+# Upgrade firmware
+fw-upgrade:
+  fwupdmgr update
+

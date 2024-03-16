@@ -36,6 +36,7 @@
           }
           #          ./users/sops.nix
           ./config/gnome.nix
+          #./config/kde.nix
           ./config/fonts.nix
           ./config/print.nix
           ./config/sound.nix
