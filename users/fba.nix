@@ -67,6 +67,8 @@
         text-scaling-factor = 1.25;
         show-battery-percentage = true;
         enable-hot-corners = false;
+        cursor-theme = "Adwaita";
+        icon-theme = "Adwaita";
       };
       "org/gnome/Console" = {
         audible-bell = false;
