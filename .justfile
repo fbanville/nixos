@@ -36,10 +36,10 @@ clean:
 
 # Refresh firmware and get upgrades
 fw-update:
-  fwupdmgr --force refresh
-  fwupdmgr get-updates 
+  sudo fwupdmgr --force refresh
+  sudo fwupdmgr get-updates 
 
 # Upgrade firmware
 fw-upgrade:
-  fwupdmgr update
+  sudo fwupdmgr update
 
