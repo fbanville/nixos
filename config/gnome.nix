@@ -37,5 +37,20 @@
     #mojave-gtk-theme
     dconf2nix
     gnome.dconf-editor
+    gnomeExtensions.gsconnect
+  ];
+
+  # KDE Connect (gsconnect)
+  networking.firewall.allowedTCPPortRanges = [
+    {
+      from = 1714;
+      to = 1764;
+    }
+  ];
+  networking.firewall.allowedUDPPortRanges = [
+    {
+      from = 1714;
+      to = 1764;
+    }
   ];
 }
