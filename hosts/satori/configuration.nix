@@ -19,4 +19,10 @@
   system.stateVersion = "23.05"; # Did you read the comment?
   # Firmware Management
   services.fwupd.enable = true;
+  # Thunderbold enablement
+  services.hardware.bolt.enable = true;
+  # DisplayLink enablement
+  environment.systemPackages = [
+    pkgs.displaylink
+  ];
 }

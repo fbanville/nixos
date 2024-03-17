@@ -12,7 +12,6 @@
     #    sops-nix.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  #outputs = { self, nixpkgs, nixos-hardware, disko, home-manager, sops-nix, }: {
   outputs = {
     self,
     nixpkgs,
