@@ -28,6 +28,7 @@
           #sops-nix.nixosModules.sops
           ./hosts/satori/configuration.nix
           ./config/base.nix
+          ./config/console.nix
           ./users/users.nix
           home-manager.nixosModules.home-manager
           {
