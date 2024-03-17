@@ -9,17 +9,25 @@
   - https://haseebmajid.dev/posts/2024-01-28-how-to-get-sops-nix-working-with-home-manager-modules/
   - refactor for desktop and servers.
 
-## Installation 
+## Installation on HOST
 1. On a new system, boot with nixos minimum image from a usb key (using Ventoy for example)
 2. At the prompt, sudo -i
 3. Set a password for root
-4. Install an authorized key in /root/.ssh: just remote-ssh-setup
-5. Try to ssh into the machime and disconnect: just remote-ssh
-6. Enable nix extended commands: just remote-enable-flake
+4. Check ip address: ip a
+5. Adjust ip address in .env
+6. Install an authorized key in /root/.ssh: just remote-ssh-setup HOST
+7. Try to ssh into the machime and disconnect: just remote-ssh HOST
+8. Enable nix extended commands: just remote-enable-flake HOST
+9. Perform the installation: just remote-install HOST 
+10. reboot
+11. just remote-ssh HOST
+12. give root and all users a password.
 
+## Local deployment
 
-Manual Step
+## Remote deployment
 
+## Postinstallation
 ### All systems
 - installation of ssh keys.
 - when starting firefox for the first time : 
